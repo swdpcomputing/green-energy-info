@@ -30,22 +30,22 @@ function App() {
         title={electrictyTakers[0].title}
         date={electrictyTakers[0].date}
         amount={electrictyTakers[0].amount}
-      ></ElectricityTaker>
+      />
       <ElectricityTaker
         title={electrictyTakers[1].title}
         date={electrictyTakers[1].date}
         amount={electrictyTakers[1].amount}
-      ></ElectricityTaker>
+      />
       <ElectricityTaker
         title={electrictyTakers[2].title}
         date={electrictyTakers[2].date}
         amount={electrictyTakers[2].amount}
-      ></ElectricityTaker>
+      />
       <ElectricityTaker
         title={electrictyTakers[3].title}
         date={electrictyTakers[3].date}
         amount={electrictyTakers[3].amount}
-      ></ElectricityTaker>
+      />
     </div>
   );
 }
