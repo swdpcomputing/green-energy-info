@@ -1,16 +1,12 @@
 import "./ElectricityTaker.css";
 
-function ElectricityTaker() {
-  const takerTitle = "Microwave";
-  const electricityDate = new Date(2021, 2, 23);
-  const amountOfElectricity = "1.2434";
-
+function ElectricityTaker(props) {
   return (
     <div className="electricity-taker">
-      <h2>{takerTitle}</h2>
+      <h2>{props.title}</h2>
       <div className="electricity-taker__description">
-        <h3>{electricityDate.toISOString()}</h3>
-        <div className="electricity-taker__amount">{amountOfElectricity}kW</div>
+        <h3>{props.date.toISOString()}</h3>
+        <div className="electricity-taker__amount">{props.amount}kW</div>
       </div>
     </div>
   );
