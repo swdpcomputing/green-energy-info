@@ -3,6 +3,10 @@ import Card from './Card';
 import "./ElectricityTaker.css";
 
 const ElectricityTaker = (props) => {
+  const clickHandler = () => {
+    console.log("Clicked!");
+  }
+  
   return (
     <Card className="electricity-taker">
       <Date date={props.date} />
@@ -10,6 +14,7 @@ const ElectricityTaker = (props) => {
         <h2>{props.title}</h2>
         <div className="electricity-taker__amount">{props.amount}kW</div>
       </div>
+      <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
 }
