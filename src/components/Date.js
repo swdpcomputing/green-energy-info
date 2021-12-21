@@ -1,6 +1,6 @@
 import "./Date.css";
 
-function Date(props) {
+const Date = (props) => {
   const day = props.date.toLocaleString("en-GB", { day: "2-digit" });
   const month = props.date.toLocaleString("en-GB", { month: "long" });
   const year = props.date.toLocaleString("en-GB", { year: "numeric" });

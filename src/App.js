@@ -1,7 +1,7 @@
-import ElectricityTaker from "./components/ElectricityTaker";
+import ElectricityTakers from "./components/ElectricityTakers";
 
-function App() {
-  const electrictyTakers = [
+const App = () => {
+  const electricityTakerData = [
     {
       title: "Microwave",
       date: new Date(2021, 2, 2),
@@ -23,29 +23,11 @@ function App() {
       amount: "5.342",
     },
   ];
+
   return (
     <div>
       <h2>Some Stuff</h2>
-      <ElectricityTaker
-        title={electrictyTakers[0].title}
-        date={electrictyTakers[0].date}
-        amount={electrictyTakers[0].amount}
-      />
-      <ElectricityTaker
-        title={electrictyTakers[1].title}
-        date={electrictyTakers[1].date}
-        amount={electrictyTakers[1].amount}
-      />
-      <ElectricityTaker
-        title={electrictyTakers[2].title}
-        date={electrictyTakers[2].date}
-        amount={electrictyTakers[2].amount}
-      />
-      <ElectricityTaker
-        title={electrictyTakers[3].title}
-        date={electrictyTakers[3].date}
-        amount={electrictyTakers[3].amount}
-      />
+      <ElectricityTakers items={electricityTakerData} />
     </div>
   );
 }
